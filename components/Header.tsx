@@ -1,7 +1,7 @@
 'use client';
 
 import { useRouter } from "next/navigation";
-import { twJoin } from "tailwind-merge";
+import { twMerge } from "tailwind-merge";
 import { RxCaretLeft,RxCaretRight } from "react-icons/rx";
 import { HiHome } from "react-icons/hi";
 import { BiSearch } from "react-icons/bi";
@@ -41,7 +41,7 @@ const Header: React.FC<HeaderProps> = ({
         }
     }
     return (
-        <div className={twJoin(`h-fit bg-gradient-to-b from-emerald-800 p-6`, className)}>
+        <div className={twMerge(`h-fit bg-gradient-to-b from-emerald-800 p-6`, className)}>
             <div className="w-full md-4 flex items-center justify-between">
                 <div className="hidden md:flex gap-x-2 items-center">
                     <button onClick={() => router.back()} className="rounded-full bg-black flex items-center justify-center hover:opacity-75 transition">
